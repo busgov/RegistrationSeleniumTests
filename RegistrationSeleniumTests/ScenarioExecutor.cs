@@ -10,12 +10,12 @@ namespace RegistrationSeleniumTests
 {
     internal class ScenarioExecutor : IDisposable
     {
-        private readonly IList<Step> _steps;
+        private readonly Scenario _scenario;
         private readonly IWebDriver _driver;
 
-        public ScenarioExecutor(IList<Step> steps, DriverType driverType)
+        public ScenarioExecutor(Scenario scenario, DriverType driverType)
         {
-            _steps = steps;
+            _scenario = scenario;
             switch (driverType)
             {
                 case DriverType.Chrome:
@@ -41,7 +41,7 @@ namespace RegistrationSeleniumTests
 
         public int StepNumber { get; private set; } = 1;
 
-        public bool HasMoreSteps => StepNumber <= _steps.Count;
+        public bool HasMoreSteps => StepNumber <= _scenario.Steps.Count;
 
         public void Reset()
         {
@@ -58,7 +58,7 @@ namespace RegistrationSeleniumTests
 
             Console.Write($"Processing step {pad}{StepNumber}: ");
 
-            var step = _steps[StepNumber - 1];           
+            var step = _scenario.Steps[StepNumber - 1];           
 
             switch (step.Action)
             {

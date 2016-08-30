@@ -1,0 +1,105 @@
+﻿{
+  "Name": "[Not defined]",
+  "Actions": [
+    {
+      "Title": "Opening select registrations page",
+      "ActionType": "NavigateToUrl",
+      "Url": "http://register.training.business.gov.au",
+      "XPath": null,
+      "Id": null,
+      "Disabled": false,
+      "PreDelay": 0,
+      "PostDelay": 300
+    },
+    {
+      "Title": "Dismissing test system message",
+      "ActionType": "Click",
+      "Url": null,
+      "XPath": "/html/body/div[2]/button",
+      "Id": null,
+      "Disabled": false,
+      "PreDelay": 0,
+      "PostDelay": 300
+    },
+    {
+      "Title": "Selecting ABN",
+      "ActionType": "Click",
+      "Url": null,
+      "XPath": "//*[@id=\"select-registrations\"]/div/div[1]/p[1]/label",
+      "Id": null,
+      "Disabled": false,
+      "PreDelay": 0,
+      "PostDelay": 300
+    },
+    {
+      "Title": "Selecting business name",
+      "ActionType": "Click",
+      "Url": null,
+      "XPath": "//*[@id=\"select-registrations\"]/div/div[1]/p[2]/label",
+      "Id": null,
+      "Disabled": false,
+      "PreDelay": 0,
+      "PostDelay": 300
+    },
+    {
+      "Title": "Selecting GST",
+      "ActionType": "Click",
+      "Url": null,
+      "XPath": "//*[@id=\"select-registrations\"]/div/div[1]/p[3]/label",
+      "Id": null,
+      "Disabled": false,
+      "PreDelay": 0,
+      "PostDelay": 300
+    },
+    {
+      "Title": "Selecting company",
+      "ActionType": "Click",
+      "Url": null,
+      "XPath": "//*[@id=\"select-registrations\"]/div/div[1]/p[4]/label",
+      "Id": null,
+      "Disabled": false,
+      "PreDelay": 0,
+      "PostDelay": 300
+    },
+    {
+      "Title": "Moving to next section",
+      "ActionType": "Click",
+      "Url": null,
+      "XPath": "//*[@id=\"ajax-container-for-businessdetails\"]/div[2]/div[3]/div/button",
+      "Id": null,
+      "Disabled": false,
+      "PreDelay": 0,
+      "PostDelay": 300
+    },
+    {
+      "Title": "Start applying...",
+      "ActionType": "Click",
+      "Url": null,
+      "XPath": "//*[@id=\"ajax-container-for-businessdetails\"]/div[3]/div/div/button[2]",
+      "Id": null,
+      "Disabled": false,
+      "PreDelay": 0,
+      "PostDelay": 900
+    },
+    {
+      "Title": "Skipping logon section",
+      "ActionType": "Click",
+      "Url": null,
+      "XPath": "//*[@id=\"ajax-container-for-entitlement\"]/div[2]/div[1]/div/div/button[2]",
+      "Id": null,
+      "Disabled": false,
+      "PreDelay": 0,
+      "PostDelay": 300
+    },
+    {
+      "Title": "Selecting private company",
+      "ActionType": "Click",
+      "Url": null,
+      "XPath": "//*[@id=\"ajax-container-for-entitlement\"]/div[3]/div[2]/div[1]/fieldset/div/div[2]/p/label",
+      "Id": null,
+      "Disabled": false,
+      "PreDelay": 0,
+      "PostDelay": 300
+    }
+  ]
+}

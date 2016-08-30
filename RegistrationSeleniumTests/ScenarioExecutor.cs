@@ -39,79 +39,118 @@ namespace RegistrationSeleniumTests
             }
         }
 
-        public int StepNumber { get; private set; } = 1;
+        public int ActionNumber { get; private set; } = 1;
 
-        public bool HasMoreSteps => StepNumber <= _scenario.Steps.Count;
+        public bool HasMore => ActionNumber <= _scenario.Actions.Count;
 
         public void Reset()
         {
-            StepNumber = 1;
+            ActionNumber = 1;
         }
 
-        public void Step()
+        public bool Next()
         {
-            if (!HasMoreSteps) { throw new InvalidOperationException("No more steps"); }
-
-            var stepNumberText = StepNumber.ToString();
-            var len = stepNumberText.Length;
-            var pad = "".PadLeft(4 - len);
-
-            Console.Write($"Processing step {pad}{StepNumber}: ");
-
-            var step = _scenario.Steps[StepNumber - 1];           
-
-            switch (step.Action)
+            try
             {
-                case StepAction.None:
-                    break;
+                if (!HasMore) { throw new InvalidOperationException("No more actions"); }
 
-                case StepAction.Click:
-                    Console.WriteLine($"Clicking '{step.XPath}'.");
+                var action = _scenario.Actions[ActionNumber++ - 1];
 
-                    // TODO: invalid XPath?
-                    var clickable = _driver.FindElement(By.XPath(step.XPath));
-                    clickable?.Click();
-                    break;
+                var maxLen = _scenario.Actions.Count.ToString().Length;
+                var text = ActionNumber.ToString();
+                var len = text.Length;
+                var pad = $"[{text.PadLeft(maxLen - len)}]=> ";
 
-                case StepAction.SetValue:
-                    break;
+                Console.WriteLine();
+                Console.WriteLine($"{pad}{action.Title}:");
+                Console.Write("".PadLeft(pad.Length));
 
-                case StepAction.NavigateToUrl:
-                    Console.WriteLine($"Navigating to URL '{step.Url}'.");
-                    _driver.Navigate().GoToUrl(step.Url);
-                    break;
+                if (action.Disabled)
+                {
+                    Console.WriteLine($"Action {action.ActionType} disabled, not executing.");
+                    return true;
+                }
 
-                default:
-                    throw new ArgumentOutOfRangeException();
+                System.Threading.Thread.Sleep(action.PreDelay);
+
+                switch (action.ActionType)
+                {
+                    case ActionType.None:
+                        break;
+
+                    case ActionType.Click:
+                        Console.WriteLine($"Clicking '{action.XPath}'.");
+                        Click(action);
+                        break;
+
+                    case ActionType.SetValue:
+                        break;
+
+                    case ActionType.NavigateToUrl:
+                        Console.WriteLine($"Navigating to URL '{action.Url}'.");
+                        _driver.Navigate().GoToUrl(action.Url);
+                        break;
+
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
+
+                System.Threading.Thread.Sleep(action.PostDelay);
+                return true;
             }
-
-            StepNumber++;
+            catch (Exception ex)
+            {
+                Console.WriteLine($"{ex}");
+                return false;
+            }
         }
 
-        public void Steps(int count)
-        {
-            while (count-- > 0)
-            {
-                Step();
-            }
-        }
-
-        public void Run(bool reset)
+        public void Run(bool reset, bool stopOnError)
         {
             if (reset)
             {
                 Reset();
             }
 
-            while (HasMoreSteps)
+            while (HasMore)
             {
-                Step();
+                if (!Next() && stopOnError)
+                {
+                    return;
+                }
             }
         }
 
         public void Dispose()
         {
             _driver?.Dispose();
+        }
+
+        private IWebElement GetElement(Action action)
+        {
+            IWebElement element = null;
+
+            if (!string.IsNullOrWhiteSpace(action.XPath))
+            {
+                element = _driver.FindElement(By.XPath(action.XPath));
+            }
+
+            if (!string.IsNullOrWhiteSpace(action.Id))
+            {
+                element = _driver.FindElement(By.Id(action.Id));
+            }
+
+            if (element == null)
+            {
+                throw new ArgumentException("Did not find element.");
+            }
+
+            return element;
+        }
+
+        private void Click(Action action)
+        {
+            GetElement(action).Click();
         }
     }
 }

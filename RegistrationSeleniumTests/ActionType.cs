@@ -1,6 +1,6 @@
 ﻿namespace RegistrationSeleniumTests
 {
-    internal enum StepAction
+    internal enum ActionType
     {
         None,
         Click,

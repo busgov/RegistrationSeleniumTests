@@ -91,6 +91,11 @@ namespace RegistrationSeleniumTests
                         _driver.Navigate().GoToUrl(action.Url);
                         break;
 
+                    case ActionType.WaitForKey:
+                        Console.WriteLine("Waiting for key to be pressed.");
+                        Console.ReadKey();
+                        break;
+
                     default:
                         throw new ArgumentOutOfRangeException();
                 }

@@ -72,6 +72,10 @@
       "PostDelay": 300
     },
     {
+      "Title": "Pause...",
+      "ActionType":  "WaitForKey"  
+    },
+    {
       "Title": "Start applying...",
       "ActionType": "Click",
       "Url": null,
@@ -96,6 +100,26 @@
       "ActionType": "Click",
       "Url": null,
       "XPath": "//*[@id=\"ajax-container-for-entitlement\"]/div[3]/div[2]/div[1]/fieldset/div/div[2]/p/label",
+      "Id": null,
+      "Disabled": false,
+      "PreDelay": 0,
+      "PostDelay": 300
+    },
+    {
+      "Title": "Selecting proprietary limited",
+      "ActionType": "Click",
+      "Url": null,
+      "XPath": "//*[@id=\"ajax-container-for-entitlement\"]/div[3]/div[2]/div[1]/fieldset[3]/div[6]/div/p/label",
+      "Id": null,
+      "Disabled": false,
+      "PreDelay": 0,
+      "PostDelay": 300
+    },
+    {
+      "Title": "Next...",
+      "ActionType": "Click",
+      "Url": null,
+      "XPath": "//*[@id=\"ajax-container-for-entitlement\"]/div[3]/div[2]/div[2]/div/button[2]",
       "Id": null,
       "Disabled": false,
       "PreDelay": 0,

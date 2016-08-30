@@ -8,12 +8,15 @@ namespace RegistrationSeleniumTests
     {
         internal static void Main(string[] args)
         {
-            using (var driver = new ChromeDriver())
-            {
-                driver.Navigate().GoToUrl("http://register.training.business.gov.au");
+            var step1 = new Step { Action = StepAction.NavigateToUrl, Url = "http://register.training.business.gov.au" };
+            var step2 = new Step { Action = StepAction.Click, XPath = "/html/body/div[2]/button" };
 
-                var dismiss = driver.FindElement(By.XPath("/html/body/div[2]/button"));
-                dismiss.Click();
+            using (var executor = new ScenarioExecutor(new [] { step1, step2 }, DriverType.Chrome))
+            {
+                while (executor.HasMoreSteps)
+                {
+                    executor.Step();
+                }
 
                 Console.WriteLine("Press enter to continue...");
                 Console.ReadLine();

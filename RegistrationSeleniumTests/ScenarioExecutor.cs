@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
@@ -137,6 +138,14 @@ namespace RegistrationSeleniumTests
                         case ActionType.Stop:
                             return false;
 
+                        case ActionType.SwitchToFrame:
+                            SwitchToFrame(action);
+                            break;
+
+                        case ActionType.SwitchToDefault:
+                            SwitchToDefault(action);
+                            break;
+
                         default:
                             throw new ArgumentOutOfRangeException();
                     }
@@ -251,6 +260,16 @@ namespace RegistrationSeleniumTests
                     action.ClickAtY)
                 .Click()
                 .Perform();
+        }
+
+        private void SwitchToFrame(Action action)
+        {
+            _driver.SwitchTo().Frame(GetElement(action));
+        }
+
+        private void SwitchToDefault(Action action)
+        {
+            _driver.SwitchTo().DefaultContent();
         }
     }
 }

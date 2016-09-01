@@ -125,7 +125,7 @@
     {
       "Title": "Set company name",
       "ActionType": "SetValue",
-      "Value":  "Bob'D'Builder Building Stuff", 
+      "Value": "Bob'D'Builder Building Stuff",
       "XPath": "//*[@id=\"CompanyName_ProposedCompanyName\"]",
       "Id": null,
       "Disabled": false,
@@ -135,7 +135,7 @@
     {
       "Title": "Check...",
       "ActionType": "SetValue",
-      "Value":  "pty ltd", 
+      "Value": "pty ltd",
       "XPath": "//*[@id=\"CompanyName_NewNameLegalElementId\"]",
       "Id": null,
       "Disabled": false,
@@ -1103,6 +1103,11 @@
       "PostDelay": 300
     },
     {
+      "Title": "Seitching to payment iframe",
+      "ActionType": "SwitchToFrame",
+      "XPath": "//*[@id=\"pay-frame\"]"
+    },
+    {
       "Title": "Pay now",
       "ActionType": "ClickJs",
       "Url": null,
@@ -1112,7 +1117,10 @@
       "Disabled": false,
       "PreDelay": 0,
       "PostDelay": 300
+    },
+    {
+      "Title": "Switching from iframe",
+      "ActionType": "SwitchToDefault"
     }
   ]
 }
-

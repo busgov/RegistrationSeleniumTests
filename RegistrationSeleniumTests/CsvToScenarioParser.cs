@@ -44,11 +44,13 @@ namespace RegistrationSeleniumTests
                 case ActionType.None:
                 case ActionType.WaitForKey:
                 case ActionType.Stop:
+                case ActionType.SwitchToDefault:
                     break;
 
                 case ActionType.Click:
                 case ActionType.ClickJs:
                 case ActionType.MoveTo:
+                case ActionType.SwitchToFrame:
                     action.XPath = actionParameters[2];
                     break;
 

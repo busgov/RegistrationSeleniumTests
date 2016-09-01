@@ -13,6 +13,8 @@
         SelectByIndex,
         NavigateToUrl,
         MoveTo,
-        Stop
+        Stop,
+        SwitchToFrame,
+        SwitchToDefault
     }
 }

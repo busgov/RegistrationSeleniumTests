@@ -24,6 +24,9 @@ namespace RegistrationSeleniumTests
         public string Id { get; set; }
 
         [DataMember]
+        public string Value { get; set; }
+
+        [DataMember]
         public bool Disabled { get; set; }
 
         [DataMember]
@@ -31,5 +34,11 @@ namespace RegistrationSeleniumTests
 
         [DataMember]
         public int PostDelay { get; set; }
+
+        [DataMember]
+        public int ClickAtX { get; set; }
+
+        [DataMember]
+        public int ClickAtY { get; set; }
     }
 }

@@ -5,7 +5,14 @@
         None,
         WaitForKey,
         Click,
+        ClickAt,
+        ClickJs,
         SetValue,
-        NavigateToUrl
+        SelectByValue,
+        SelectByText,
+        SelectByIndex,
+        NavigateToUrl,
+        MoveTo,
+        Stop
     }
 }

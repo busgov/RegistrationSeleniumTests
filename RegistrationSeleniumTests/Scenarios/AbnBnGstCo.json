@@ -143,7 +143,7 @@
       "PostDelay": 300
     },
     {
-      "Title": "Add...",
+      "Title": "Check name...",
       "ActionType": "Click",
       "Url": null,
       "XPath": "//*[@id=\"CompanyName_SearchCompanyName\"]",
@@ -153,14 +153,14 @@
       "PostDelay": 300
     },
     {
-      "Title": "Next...",
+      "Title": "Add name...",
       "ActionType": "Click",
       "Url": null,
       "XPath": "//*[@id=\"fieldsetCompanyNewName\"]/div/div/div/div[3]/button",
       "Id": null,
       "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 300
+      "PreDelay": 1000,
+      "PostDelay": 1000
     },
     {
       "Title": "Next...",
@@ -1103,9 +1103,74 @@
       "PostDelay": 300
     },
     {
-      "Title": "Seitching to payment iframe",
+      "Title": "Switching to payment iframe",
       "ActionType": "SwitchToFrame",
       "XPath": "//*[@id=\"pay-frame\"]"
+    },
+    {
+      "Title": "Cardholder name",
+      "ActionType": "SetValue",
+      "Url": null,
+      "XPath": "//*[@id=\"cardholdername\"]",
+      "Id": null,
+      "Value": "Robert D Builder",
+      "Disabled": false,
+      "PreDelay": 0,
+      "PostDelay": 300,
+      "ClickAtX": 0,
+      "ClickAtY": 0
+    },
+    {
+      "Title": "Card number",
+      "ActionType": "SetValue",
+      "Url": null,
+      "XPath": "//*[@id=\"ccnumber\"]",
+      "Id": null,
+      "Value": "1234 4569 7895 1243",
+      "Disabled": false,
+      "PreDelay": 0,
+      "PostDelay": 300,
+      "ClickAtX": 0,
+      "ClickAtY": 0
+    },
+    {
+      "Title": "Set expire month",
+      "ActionType": "SelectByText",
+      "Url": null,
+      "XPath": "//*[@id=\"card-date\"]/div[1]/select[1]",
+      "Id": null,
+      "Value": "01",
+      "Disabled": false,
+      "PreDelay": 0,
+      "PostDelay": 300,
+      "ClickAtX": 0,
+      "ClickAtY": 0
+    },
+    {
+      "Title": "Set expire year",
+      "ActionType": "SelectByText",
+      "Url": null,
+      "XPath": "//*[@id=\"card-date\"]/div[1]/select[2]",
+      "Id": null,
+      "Value": "2019",
+      "Disabled": false,
+      "PreDelay": 0,
+      "PostDelay": 300,
+      "ClickAtX": 0,
+      "ClickAtY": 0
+    },
+    {
+      "Title": "Security code",
+      "ActionType": "SetValue",
+      "Url": null,
+      "XPath": "//*[@id=\"ccv\"]",
+      "Id": null,
+      "Value": "987",
+      "Disabled": false,
+      "PreDelay": 0,
+      "PostDelay": 300,
+      "ClickAtX": 0,
+      "ClickAtY": 0
     },
     {
       "Title": "Pay now",

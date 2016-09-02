@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
@@ -52,8 +53,8 @@ namespace RegistrationSeleniumTests
 
         public bool Next()
         {
-            var tries = 5;
-            while (tries-- > 0)
+            var tries = 3;
+            while (tries-- >= 0)
             {
                 try
                 {
@@ -122,8 +123,8 @@ namespace RegistrationSeleniumTests
                             break;
 
                         case ActionType.NavigateToUrl:
-                            Console.WriteLine($"Navigating to URL '{action.Url}'.");
-                            _driver.Navigate().GoToUrl(action.Url);
+                            Console.WriteLine($"Navigating to URL '{action.Value}'.");
+                            _driver.Navigate().GoToUrl(action.Value);
                             break;
 
                         case ActionType.WaitForKey:
@@ -167,7 +168,7 @@ namespace RegistrationSeleniumTests
                 }
             }
 
-            return true;
+            return false;
         }
 
         public void Run(bool reset, bool stopOnError)
@@ -203,11 +204,6 @@ namespace RegistrationSeleniumTests
                     if (!string.IsNullOrWhiteSpace(action.XPath))
                     {
                         element = _driver.FindElement(By.XPath(action.XPath));
-                    }
-
-                    if (!string.IsNullOrWhiteSpace(action.Id))
-                    {
-                        element = _driver.FindElement(By.Id(action.Id));
                     }
 
                     if (element == null)
@@ -271,12 +267,32 @@ namespace RegistrationSeleniumTests
 
         private void ClickAt(Action action)
         {
+            var x = 0;
+            var y = 0;
+
+            try
+            {
+                var xyValues = action
+                    .Value
+                    .Split(new[] { ',' }, 2)
+                    .Select(v => v?.Trim() ?? string.Empty)
+                    .ToArray();
+
+                x = int.Parse(xyValues[0]);
+                y = int.Parse(xyValues[1]);
+            }
+            catch (Exception)
+            {
+                throw new Exception(
+                    "There must be two integer values in the for 'x, y' defining the click at action.");
+            }
+
             // Move to X, Y to avoid any <a> tags that may be in the element.
             new Actions(_driver)
                 .MoveToElement(
                     GetElement(action),
-                    action.ClickAtX,
-                    action.ClickAtY)
+                    x,
+                    y)
                 .Click()
                 .Perform();
         }

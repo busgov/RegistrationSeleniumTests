@@ -4,1184 +4,585 @@
     {
       "Title": "Opening select registrations page",
       "ActionType": "NavigateToUrl",
-      // "Url": "http://register.training.business.gov.au",
-      "Url": "http://sobrs:8081",
-      "XPath": null,
-      "Id": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "http:\\sobrs:8081"
+    },
+    {
+      "Title": "Declare electronic lodgement protocol",
+      "ActionType": "ClickAt",
+      "XPath": "//label[contains(text(), 'submitted')]",
+      "Value": "5, 6"
     },
     {
       "Title": "Dismissing test system message",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "/html/body/div[2]/button",
-      "Id": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "/html/body/div[2]/button"
     },
     {
       "Title": "Selecting ABN",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"RegistrationTypesViewModel_select-registrations\"]/div/div[1]/p[1]/label",
-      "Id": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"RegistrationTypesViewModel_select-registrations\"]/div/div[1]/p[1]/label"
     },
     {
       "Title": "Selecting business name",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"RegistrationTypesViewModel_select-registrations\"]/div/div[1]/p[2]/label",
-      "Id": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"RegistrationTypesViewModel_select-registrations\"]/div/div[1]/p[2]/label"
     },
     {
       "Title": "Selecting GST",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"RegistrationTypesViewModel_select-registrations\"]/div/div[1]/p[3]/label",
-      "Id": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"RegistrationTypesViewModel_select-registrations\"]/div/div[1]/p[3]/label"
     },
     {
       "Title": "Selecting company",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"RegistrationTypesViewModel_select-registrations\"]/div/div[1]/p[4]/label",
-      "Id": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"RegistrationTypesViewModel_select-registrations\"]/div/div[1]/p[4]/label"
     },
     {
       "Title": "Moving to next section",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ajax-container-for-businessdetails\"]/div[2]/div[3]/div/button",
-      "Id": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ajax-container-for-businessdetails\"]/div[2]/div[3]/div/button"
     },
     {
       "Title": "Start applying...",
       "ActionType": "Click",
-      "Url": null,
       "XPath": "//*[@id=\"ajax-container-for-businessdetails\"]/div[3]/div/div/button[2]",
-      "Id": null,
-      "Disabled": false,
-      "PreDelay": 0,
       "PostDelay": 900
     },
     {
       "Title": "Skipping logon section",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ajax-container-for-entitlement\"]/div[2]/div[1]/div/div/button[2]",
-      "Id": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ajax-container-for-entitlement\"]/div[2]/div[1]/div/div/button[2]"
     },
     {
       "Title": "Selecting private company",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ajax-container-for-entitlement\"]/div[3]/div[2]/div[1]/fieldset/div/div[2]/p/label",
-      "Id": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ajax-container-for-entitlement\"]/div[3]/div[2]/div[1]/fieldset/div/div[2]/p/label"
     },
     {
       "Title": "Selecting proprietary limited",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ajax-container-for-entitlement\"]/div[3]/div[2]/div[1]/fieldset[3]/div[6]/div/p/label",
-      "Id": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ajax-container-for-entitlement\"]/div[3]/div[2]/div[1]/fieldset[3]/div[6]/div/p/label"
     },
     {
       "Title": "Next...",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ajax-container-for-entitlement\"]/div[3]/div[2]/div[2]/div/button[2]",
-      "Id": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ajax-container-for-entitlement\"]/div[3]/div[2]/div[2]/div/button[2]"
     },
     {
       "Title": "Set company name",
       "ActionType": "SetValue",
-      "Value": "Bob'D'Builder Building Stuff",
       "XPath": "//*[@id=\"CompanyName_ProposedCompanyName\"]",
-      "Id": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "Bob'D'Builder Building Stuff"
     },
     {
       "Title": "Check...",
       "ActionType": "SetValue",
-      "Value": "pty ltd",
       "XPath": "//*[@id=\"CompanyName_NewNameLegalElementId\"]",
-      "Id": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "pty ltd"
     },
     {
       "Title": "Check name...",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"CompanyName_SearchCompanyName\"]",
-      "Id": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"CompanyName_SearchCompanyName\"]"
     },
     {
       "Title": "Add name...",
       "ActionType": "Click",
-      "Url": null,
       "XPath": "//*[@id=\"fieldsetCompanyNewName\"]/div/div/div/div[3]/button",
-      "Id": null,
-      "Disabled": false,
       "PreDelay": 1000,
       "PostDelay": 1000
     },
     {
       "Title": "Next...",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ajax-container-for-businessname\"]/div[2]/div[3]/div/button[2]",
-      "Id": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ajax-container-for-businessname\"]/div[2]/div[3]/div/button[2]"
     },
     {
       "Title": "Next...",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"BusinessNames_BusinessNameSearchText\"]",
-      "Value": "Bobs building and painting",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "Bobs building and painting"
     },
     {
       "Title": "Next...",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ajax-container-for-businessname\"]/div[3]/fieldset/div[2]/div/p/button",
-      "Id": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ajax-container-for-businessname\"]/div[3]/fieldset/div[2]/div/p/button"
     },
     {
       "Title": "Next...",
       "ActionType": "SelectByValue",
       "XPath": "//*[@id=\"BusinessNames_SearchedBusinessName_SelectedPrice\"]",
-      "Value": "80",
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "80"
     },
     {
       "Title": "Next...",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ajax-container-for-businessname\"]/div[3]/fieldset/div[3]/div/div[3]/button",
-      "Id": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ajax-container-for-businessname\"]/div[3]/fieldset/div[3]/div/div[3]/button"
     },
     {
       "Title": "Next...",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ajax-container-for-businessname\"]/div[3]/div[1]/div/button[2]",
-      "Id": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ajax-container-for-businessname\"]/div[3]/div[1]/div/button[2]"
     },
     {
       "Title": "State of registration",
       "ActionType": "SelectByValue",
-      "Url": null,
       "XPath": "//*[@id=\"ContactDetails_StateTerritoryOfBusinessId\"]",
-      "Id": null,
-      "Value": "2",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "2"
     },
     {
       "Title": "Contace details phone",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"ContactDetails_Phone\"]",
-      "Id": null,
-      "Value": "02 1234 5678",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "02 1234 5678"
     },
     {
-      "Title": null,
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"ContactDetails_Email\"]",
-      "Id": null,
-      "Value": "bob@wojcik.com.au",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "bob@wojcik.com.au"
     },
     {
-      "Title": null,
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ContactDetails_RegisteredAddress\"]/div[3]/fieldset[2]/p/input",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ContactDetails_RegisteredAddress\"]/div[3]/fieldset[2]/p/input"
     },
     {
-      "Title": null,
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"ContactDetails_RegisteredAddress_AddressLine1\"]",
-      "Id": null,
-      "Value": "12 Nowhere St",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "12 Nowhere St"
     },
     {
-      "Title": null,
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"ContactDetails_RegisteredAddress_Suburb\"]",
-      "Id": null,
-      "Value": "Notopia",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "Notopia"
     },
     {
-      "Title": null,
       "ActionType": "SelectByText",
-      "Url": null,
       "XPath": "//*[@id=\"ContactDetails_RegisteredAddress_State\"]",
-      "Id": null,
-      "Value": "Australian Capital Territory",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "Australian Capital Territory"
     },
     {
-      "Title": null,
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"ContactDetails_RegisteredAddress_Postcode\"]",
-      "Id": null,
-      "Value": "2600",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "2600"
     },
     {
-      "Title": null,
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ContactDetails_IsCompanyOccupyPremises\"]/div[2]/div/label[1]/span",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ContactDetails_IsCompanyOccupyPremises\"]/div[2]/div/label[1]/span"
     },
     {
-      "Title": null,
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ContactDetails_IsPrincipalPlaceOfBusiness\"]/div/div[2]/div/label[1]/span",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ContactDetails_IsPrincipalPlaceOfBusiness\"]/div/div[2]/div/label[1]/span"
     },
     {
-      "Title": null,
       "ActionType": "MoveTo",
-      "Url": null,
       "XPath": "//*[@id=\"ContactDetails_BusinessAddressActivity_SearchTerm\"]",
-      "Id": null,
-      "Value": "",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": ""
     },
     {
-      "Title": null,
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"ContactDetails_BusinessAddressActivity_SearchTerm\"]",
-      "Id": null,
       "Value": "Garage construction",
-      "Disabled": false,
-      "PreDelay": 2000,
-      "PostDelay": 500
+      "PreDelay": 2000
     },
     {
-      "Title": null,
       "ActionType": "Click",
-      "Url": null,
       "XPath": "//div[@id=\"businessActivitySuggestions1\"]/ul/li/span[2]",
-      "Id": null,
       "Value": "",
-      "Disabled": false,
-      "PreDelay": 2000,
-      "PostDelay": 500
+      "PreDelay": 2000
     },
     {
-      "Title": null,
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[2]/div[2]/div/div/button[2]",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[2]/div[2]/div/div/button[2]"
     },
     {
-      "Title": "",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[3]/div[2]/div[2]/div/button[2]",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[3]/div[2]/div[2]/div/button[2]"
     },
     {
       "Title": "Has ultimate holding company",
       "ActionType": "Click",
-      "Url": null,
       "XPath": "//*[@id=\"Structure_IsUnderHoldingCompany\"]/label[2]",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 300,
-      "PostDelay": 500
+      "PreDelay": 300
     },
     {
       "Title": "Associates use residential address",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"Structure_IsOfficeholdersAddressResidential\"]/label[1]",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"Structure_IsOfficeholdersAddressResidential\"]/label[1]"
     },
     {
-      "Title": "",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[4]/div[2]/div/div/button[2]",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[4]/div[2]/div/div/button[2]"
     },
     {
       "Title": "Agricultural property",
       "ActionType": "Click",
-      "Url": null,
       "XPath": "//*[@id='BusinessActivityDetails_OperateAnAgriculturalPropertyYesNo']/div/label[2]",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 1000,
-      "PostDelay": 500
+      "PreDelay": 1000
     },
     {
-      "Title": "",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"BusinessActivityDetails_IsResidentOfAustralia\"]/div/label[1]/span",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"BusinessActivityDetails_IsResidentOfAustralia\"]/div/label[1]/span"
     },
     {
-      "Title": "",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"BusinessActivityDetails_IsIncomeTaxExempt\"]/div/label[2]/span",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"BusinessActivityDetails_IsIncomeTaxExempt\"]/div/label[2]/span"
     },
     {
-      "Title": "",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"BusinessActivityDetails_IsNonProfitOrganisation\"]/div/label[2]/span",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"BusinessActivityDetails_IsNonProfitOrganisation\"]/div/label[2]/span"
     },
     {
-      "Title": "",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"BusinessActivityDetails_IsGovernmentOwnedOrControlled\"]/div/label[2]/span",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"BusinessActivityDetails_IsGovernmentOwnedOrControlled\"]/div/label[2]/span"
     },
     {
-      "Title": "",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[5]/div/div[3]/div/button[2]",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[5]/div/div[3]/div/button[2]"
     },
     {
-      "Title": "",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[6]/div[2]/div[3]/button[1]",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[6]/div[2]/div[3]/button[1]"
     },
     {
       "Title": "Director",
       "ActionType": "Click",
-      "Url": null,
       "XPath": "//*[@id=\"Associates_PersonAssociate_Roles\"]/div/div[2]/div[2]/p/label",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 300,
-      "PostDelay": 500
+      "PreDelay": 300
     },
     {
       "Title": "Secretary",
       "ActionType": "Click",
-      "Url": null,
       "XPath": "//*[@id=\"Associates_PersonAssociate_Roles\"]/div/div[2]/div[4]/p/label",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 300,
-      "PostDelay": 500
+      "PreDelay": 300
     },
     {
       "Title": "Public Officer",
       "ActionType": "Click",
-      "Url": null,
       "XPath": "//*[@id=\"Associates_PersonAssociate_Roles\"]/div/div[2]/div[6]/p/label",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 300,
-      "PostDelay": 500
+      "PreDelay": 300
     },
     {
-      "Title": "",
       "ActionType": "Click",
-      "Url": null,
       "XPath": "//*[@id=\"Associates_PersonAssociate_Roles\"]/div/div[2]/div[8]/p/label",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 300,
-      "PostDelay": 500
+      "PreDelay": 300
     },
     {
-      "Title": "",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"Associates_PersonAssociate_GivenName\"]",
-      "Id": null,
-      "Value": "Bob",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "Bob"
     },
     {
-      "Title": "",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"Associates_PersonAssociate_OtherName\"]",
-      "Id": null,
-      "Value": "D",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "D"
     },
     {
-      "Title": "",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"Associates_PersonAssociate_FamilyName\"]",
-      "Id": null,
-      "Value": "Builder",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "Builder"
     },
     {
-      "Title": "",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"Associates_PersonAssociate_ResidentialAddress\"]/div[3]/fieldset[2]/p/input",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"Associates_PersonAssociate_ResidentialAddress\"]/div[3]/fieldset[2]/p/input"
     },
     {
-      "Title": "",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"save-person\"]",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"save-person\"]"
     },
     {
       "Title": "Close TFN warning",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"dialogPOIWarning\"]/button[1]",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"dialogPOIWarning\"]/button[1]"
     },
     {
       "Title": "Set tax file number",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"Associates_PersonAssociate_TaxFileNumber\"]",
-      "Id": null,
-      "Value": "146789456",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "146789456"
     },
     {
       "Title": "Set associate birth state",
       "ActionType": "SelectByText",
-      "Url": null,
       "XPath": "//*[@id=\"Associates_PersonAssociate_StateTerritoryId\"]",
-      "Id": null,
-      "Value": "Australian Capital Territory",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "Australian Capital Territory"
     },
     {
       "Title": "Set place of birth",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"Associates_PersonAssociate_PlaceOfBirth\"]",
-      "Id": null,
-      "Value": "Hicksville",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "Hicksville"
     },
     {
       "Title": "Set DOB",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"Associates_PersonAssociate_DateOfBirth\"]",
-      "Id": null,
-      "Value": "1/1/1960",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "1/1/1960"
     },
     {
       "Title": "Associate address line 1",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"Associates_PersonAssociate_ResidentialAddress_AddressLine1\"]",
-      "Id": null,
-      "Value": "666 Devil Drive",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "666 Devil Drive"
     },
     {
       "Title": "Associate suburb",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"Associates_PersonAssociate_ResidentialAddress_Suburb\"]",
-      "Id": null,
-      "Value": "Angelville",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "Angelville"
     },
     {
-      "Title": "Set associate bith state",
+      "Title": "Set associate birth state",
       "ActionType": "SelectByText",
-      "Url": null,
       "XPath": "//*[@id=\"Associates_PersonAssociate_ResidentialAddress_State\"]",
-      "Id": null,
-      "Value": "Australian Capital Territory",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "Australian Capital Territory"
     },
     {
       "Title": "Associate postcode",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"Associates_PersonAssociate_ResidentialAddress_Postcode\"]",
-      "Id": null,
-      "Value": "6666",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "6666"
     },
     {
       "Title": "Save individual",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"save-person\"]",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"save-person\"]"
     },
     {
       "Title": "Next...",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[6]/div[2]/div[4]/div/button[2]",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[6]/div[2]/div[4]/div/button[2]"
     },
     {
       "Title": "Set business associate",
       "ActionType": "SelectByIndex",
-      "Url": null,
       "XPath": "//*[@id=\"ShareAllocation_ShareholderAllocation_SelectedShareholders_0__Id\"]",
-      "Id": null,
-      "Value": "1",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "1"
     },
     {
       "Title": "Share class/type",
       "ActionType": "SelectByText",
-      "Url": null,
       "XPath": "//*[@id=\"ShareAllocation_ShareholderAllocation_ShareClassCode\"]",
-      "Id": null,
-      "Value": "A - A",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "A - A"
     },
     {
       "Title": "Number of shares",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"ShareAllocation_ShareholderAllocation_NumberOfShares\"]",
-      "Id": null,
-      "Value": "1",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "1"
     },
     {
       "Title": "Amount per share",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"ShareAllocation_ShareholderAllocation_AmountPaidPerShare\"]",
-      "Id": null,
-      "Value": "23",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "23"
     },
     {
       "Title": "Amount unpaid per share",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"ShareAllocation_ShareholderAllocation_AmountUnpaidPerShare\"]",
-      "Id": null,
-      "Value": "0",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "0"
     },
     {
       "Title": "Not held on behalf of",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ShareAllocation_ShareholderAllocation_IsBeneficiallyHeld\"]/label[2]/span",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ShareAllocation_ShareholderAllocation_IsBeneficiallyHeld\"]/label[2]/span"
     },
     {
       "Title": "Allocate shares",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[7]/div[2]/p/button",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[7]/div[2]/p/button"
     },
     {
       "Title": "Next...",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[7]/div[2]/div[2]/div/button[2]",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[7]/div[2]/div[2]/div/button[2]"
     },
     {
       "Title": "New business in Australia",
       "ActionType": "Click",
-      "Url": null,
       "XPath": "//*[@id=\"ApplicationReasonDetails_ReasonForApplication\"]/div[1]/div/p/label",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 1000,
-      "PostDelay": 500
+      "PreDelay": 1000
     },
     {
       "Title": "First time business in Australia",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ApplicationReasonDetails_NewBusinessYesNo\"]/label[1]/span",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ApplicationReasonDetails_NewBusinessYesNo\"]/label[1]/span"
     },
     {
       "Title": "Next...",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[8]/div/div[2]/div/button[2]",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[8]/div/div[2]/div/button[2]"
     },
     {
       "Title": "Given name",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"AuthorisedContacts_AuthorisedContact_GivenName\"]",
-      "Id": null,
-      "Value": "Peter",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "Peter"
     },
     {
       "Title": "Family name",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"AuthorisedContacts_AuthorisedContact_FamilyName\"]",
-      "Id": null,
-      "Value": "Pan",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "Pan"
     },
     {
       "Title": "Position",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"AuthorisedContacts_AuthorisedContact_PositionHeld\"]",
-      "Id": null,
-      "Value": "I already told you!",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "I already told you!"
     },
     {
       "Title": "Contact details: email",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"AuthorisedContacts_AuthorisedContact_Email\"]",
-      "Id": null,
-      "Value": "peter.pan@wojcik.com.au",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "peter.pan@wojcik.com.au"
     },
     {
       "Title": "Contact details: business hours phone",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"AuthorisedContacts_AuthorisedContact_BusinessHoursPhone\"]",
-      "Id": null,
-      "Value": "0262427260",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "0262427260"
     },
     {
       "Title": "Save contact",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"AuthorisedContacts_AuthorisedContact\"]/div[2]/button[1]",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"AuthorisedContacts_AuthorisedContact\"]/div[2]/button[1]"
     },
     {
       "Title": "Next...",
       "ActionType": "Click",
-      "Url": null,
       "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[9]/div/div[4]/div/button[2]",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 3000,
-      "PostDelay": 500
+      "PreDelay": 3000
     },
     {
       "Title": "GST Turnover",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"GstDetails_GstTurnover\"]/div[2]/p[1]/label",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"GstDetails_GstTurnover\"]/div[2]/p[1]/label"
     },
     {
       "Title": "Required by law",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"GstDetails_RequiredToRegisterYesNo\"]/div[2]/div/label[2]/span",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"GstDetails_RequiredToRegisterYesNo\"]/div[2]/div/label[2]/span"
     },
     {
       "Title": "Quarterly",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"GstDetails_LodgementLookupCode_Quarterly_Label\"]/span",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"GstDetails_LodgementLookupCode_Quarterly_Label\"]/span"
     },
     {
       "Title": "No for cash basis",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"GstDetails_AccountingMethodCashYesNo\"]/div[2]/div/label[2]/span",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"GstDetails_AccountingMethodCashYesNo\"]/div[2]/div/label[2]/span"
     },
     {
       "Title": "No for importing",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"GstDetails_ImportingGoodsYesNo\"]/div[2]/div/label[2]/span",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"GstDetails_ImportingGoodsYesNo\"]/div[2]/div/label[2]/span"
     },
     {
       "Title": "No for bank account",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"GstDetails_IsEnterBankDetailsYesNo\"]/div/div[2]/div/label[2]/span",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"GstDetails_IsEnterBankDetailsYesNo\"]/div/div[2]/div/label[2]/span"
     },
     {
       "Title": "Next...",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"ajax-container-for-taxationdetails\"]/div[2]/div[2]/div/button[2]",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"ajax-container-for-taxationdetails\"]/div[2]/div[2]/div/button[2]"
     },
     {
       "Title": "Set declarer",
       "ActionType": "SelectByIndex",
-      "Url": null,
       "XPath": "//*[@id=\"Declaration_OfficeholderId\"]",
-      "Id": null,
-      "Value": "1",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "1"
     },
     {
       "Title": "Position held",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"Declaration_RegistrationDeclarationPosition\"]",
-      "Id": null,
-      "Value": "Again with the position",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "Again with the position"
     },
     {
       "Title": "Email",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"Declaration_Email\"]",
-      "Id": null,
-      "Value": "bobby@wojcik.com.au",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "Value": "bobby@wojcik.com.au"
     },
     {
       "Title": "Declare I am the applicant",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"declaration-text\"]/fieldset[1]/p[2]/label",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"declaration-text\"]/fieldset[1]/p[2]/label"
     },
     {
       "Title": "Declare not disqualified",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"declaration-text\"]/fieldset[1]/p[3]/label",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"declaration-text\"]/fieldset[1]/p[3]/label"
     },
     {
       "Title": "Declare with last 5 years",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"declaration-text\"]/fieldset[1]/p[4]/label",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"declaration-text\"]/fieldset[1]/p[4]/label"
     },
     {
       "Title": "Declare electronic lodgement protocol",
       "ActionType": "ClickAt",
-      "Url": null,
       "XPath": "//label[contains(text(), 'submitted')]",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500,
-      "ClickAtX": 5,
-      "ClickAtY": 5
+      "Value": "5, 5"
     },
     {
       "Title": "Declare to the best of my knowledge",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"declaration-text\"]/fieldset[1]/p[6]/label",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"declaration-text\"]/fieldset[1]/p[6]/label"
     },
     {
       "Title": "Declare tax registrations",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"declaration-text\"]/fieldset[2]/p[2]/label",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"declaration-text\"]/fieldset[2]/p[2]/label"
     },
     {
       "Title": "Submit!!!!!!",
       "ActionType": "Click",
-      "Url": null,
-      "XPath": "//*[@id=\"sobrsform\"]/div[2]/div[2]/div/button[2]",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//*[@id=\"sobrsform\"]/div[2]/div[2]/div/button[2]"
     },
     {
       "Title": "Switching to payment iframe",
       "ActionType": "SwitchToFrame",
-      "XPath": "//*[@id=\"pay-frame\"]"
+      "XPath": "//*[@id=\"pay-frame\"]",
+      "PostDelay": 0
     },
     {
       "Title": "Cardholder name",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"cardholdername\"]",
-      "Id": null,
-      "Value": "Robert D Builder",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500,
-      "ClickAtX": 0,
-      "ClickAtY": 0
+      "Value": "Robert D Builder"
     },
     {
       "Title": "Card number",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"ccnumber\"]",
-      "Id": null,
-      "Value": "1234 4569 7895 1243",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500,
-      "ClickAtX": 0,
-      "ClickAtY": 0
+      "Value": "1234 4569 7895 1243"
     },
     {
       "Title": "Set expire month",
       "ActionType": "SelectByText",
-      "Url": null,
       "XPath": "//*[@id=\"card-date\"]/div[1]/select[1]",
-      "Id": null,
-      "Value": "01",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500,
-      "ClickAtX": 0,
-      "ClickAtY": 0
+      "Value": "01"
     },
     {
       "Title": "Set expire year",
       "ActionType": "SelectByText",
-      "Url": null,
       "XPath": "//*[@id=\"card-date\"]/div[1]/select[2]",
-      "Id": null,
-      "Value": "2019",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500,
-      "ClickAtX": 0,
-      "ClickAtY": 0
+      "Value": "2019"
     },
     {
       "Title": "Security code",
       "ActionType": "SetValue",
-      "Url": null,
       "XPath": "//*[@id=\"ccv\"]",
-      "Id": null,
-      "Value": "987",
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500,
-      "ClickAtX": 0,
-      "ClickAtY": 0
+      "Value": "987"
     },
     {
       "Title": "Pay now",
       "ActionType": "ClickJs",
-      "Url": null,
-      "XPath": "//div[@id='payment-form']/div[2]/button",
-      "Id": null,
-      "Value": null,
-      "Disabled": false,
-      "PreDelay": 0,
-      "PostDelay": 500
+      "XPath": "//div[@id='payment-form']/div[2]/button"
     },
     {
       "Title": "Switching from iframe",

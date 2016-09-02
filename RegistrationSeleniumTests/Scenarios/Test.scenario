@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://register.uat.business.gov.au/" />
+<title>Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/registration/type</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.closeSystemMessage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=RegistrationTypesViewModel_SelectedRegistrationTypes_0__Selected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=RegistrationTypesViewModel_SelectedRegistrationTypes_1__Selected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=RegistrationTypesViewModel_SelectedRegistrationTypes_2__Selected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=RegistrationTypesViewModel_SelectedRegistrationTypes_3__Selected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=2Gr7sPbawITZbXOJ2XXNfQ==</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=2Gr7sPbawITZbXOJ2XXNfQ==</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=2Gr7sPbawITZbXOJ2XXNfQ==</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=CompanyEntitlementDetails_CompanyTypes_0_</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=CompanyEntitlementDetails_CompanySubclasses_2_</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='ajax-container-for-entitlement']/div[3]/div[2]/div/fieldset[3]/div[6]/div/p/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=2Gr7sPbawITZbXOJ2XXNfQ==</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=CompanyName_ProposedCompanyName</td>
+	<td>Bobs Building Stuff</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=CompanyName_NewNameLegalElementId</td>
+	<td>label=PTY LTD</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=UBe3XYnW0cDfkvNrWSTsgZ66UPRQnvBd5cx4eevWmyk=</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=cFN+dlHznQVVGUMNxtPTq/Y85v9g6fnieQ2Dpcc3VU0=</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=2Gr7sPbawITZbXOJ2XXNfQ==</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=BusinessNames_BusinessNameSearchText</td>
+	<td>Bobby's Building Stuff</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=2Gr7sPbawITZbXOJ2XXNfQ==</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=7KVIUXqyFVicyHfSkLCbUitSRob4nBqS5ycImFOd6Gg=</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=s0AM2cEcevWHLPREs3/kBrAQhWSAMvA6193n3FZxZ9Y=</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=2Gr7sPbawITZbXOJ2XXNfQ==</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=ContactDetails_StateTerritoryOfBusinessId</td>
+	<td>label=Australian Capital Territory</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ContactDetails_Phone</td>
+	<td>0256987458</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ContactDetails_Email</td>
+	<td>bobbys@wojcik.com.au</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ui-id-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ContactDetails_RegisteredAddress_AddressLookupText</td>
+	<td>20 Pokana Circuit, KALEEN&nbsp;&nbsp;ACT&nbsp;&nbsp;2617</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ContactDetails_IsCompanyOccupyPremises_Yes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ContactDetails_IsPrincipalPlaceOfBusiness_Yes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#ContactDetails_IsPrincipalPlaceOfBusiness &gt; div.radio-toggle &gt; label.on.label-left &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=anzsic-search</td>
+	<td>building</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li.focused</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=2Gr7sPbawITZbXOJ2XXNfQ==</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

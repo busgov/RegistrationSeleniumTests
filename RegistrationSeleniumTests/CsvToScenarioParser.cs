@@ -56,8 +56,7 @@ namespace RegistrationSeleniumTests
 
                 case ActionType.ClickAt:
                     action.XPath = actionParameters[2];
-                    action.ClickAtX = int.Parse(actionParameters[3]);
-                    action.ClickAtY = int.Parse(actionParameters[4]);
+                    action.Value = actionParameters[3];
                     break;
 
                 case ActionType.SetValue:
@@ -69,7 +68,7 @@ namespace RegistrationSeleniumTests
                     break;
 
                 case ActionType.NavigateToUrl:
-                    action.Url = actionParameters[2];
+                    action.Value = actionParameters[2];
                     break;
 
                 default:

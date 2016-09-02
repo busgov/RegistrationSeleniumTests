@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://register.uat.business.gov.au/" />
+<title>Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/registration/type</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//p/input[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//p[2]/input[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//p[3]/input[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//p[4]/input[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[3]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//p/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[6]/div/p/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[6]/div/p/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[2]/input</td>
+	<td>FANTASTIC four TOURS</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//p/input</td>
+	<td>fantastic four tours</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select</td>
+	<td>label=3 year $80.00</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select</td>
+	<td>label=Queensland</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[2]/input</td>
+	<td>0789567894</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[2]/div[2]/input</td>
+	<td>fantastic4@wojcik.com.au</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//p/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[5]/div[2]/div[2]/input</td>
+	<td>12 Nowhere St</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[5]/div[2]/input</td>
+	<td>Nowhereville</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//div[6]/div[2]/select</td>
+	<td>label=Queensland</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[7]/div[2]/input</td>
+	<td>4058</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/div[2]/div/label/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/div[2]/div/label/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//fieldset[6]/div/div/div[2]/div[2]/input</td>
+	<td>super</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[5]/ul/li[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//fieldset[2]/div/div[2]/div/label/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//fieldset[2]/div/div[2]/div/label/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[2]/div[2]/div/label/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[3]/div[2]/div/label[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[4]/div[2]/div/label[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[5]/div[2]/div/label[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//p/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//p/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[6]/p/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[6]/p/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[4]/p/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[4]/p/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[8]/p/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[8]/p/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[2]/input</td>
+	<td>Bob</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[2]/div[2]/input</td>
+	<td>D</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[3]/div[2]/input</td>
+	<td>Builder</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//div[2]/div/div[2]/select</td>
+	<td>label=Tasmania</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[2]/div[2]/div[2]/input</td>
+	<td>Two Heads Bay</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[3]/td[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//body/ul/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[3]/div/div[2]/input</td>
+	<td>41 No Where Else Road, WEST KENTISH&nbsp;&nbsp;TAS&nbsp;&nbsp;7306</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[2]/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[4]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select</td>
+	<td>label=Builder, Bob</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//div[2]/div[2]/select</td>
+	<td>label=EMP - employees</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[4]/div[2]/input</td>
+	<td>1096</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[5]/div[2]/input</td>
+	<td>235</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[6]/div[2]/input</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//p/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[2]/div[2]/input</td>
+	<td>Bob</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[3]/div[2]/input</td>
+	<td>Builder</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[4]/div[2]/input</td>
+	<td>Superhero</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//fieldset[2]/div/div[2]/input</td>
+	<td>clarkkent@wojcik.com.au</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//fieldset[2]/div[2]/div[2]/input</td>
+	<td>0256981235</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//p/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//p/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[3]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//fieldset[4]/div[2]/div/label[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/div[2]/div/label[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/div[2]/div/label[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//fieldset[5]/div[2]/div/label[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[2]</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

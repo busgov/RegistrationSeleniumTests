@@ -6,7 +6,13 @@ namespace RegistrationSeleniumTests
     {
         public static string Serialize<T>(T t)
         {
-            return JsonConvert.SerializeObject(t, Formatting.Indented);
+            return JsonConvert.SerializeObject(
+                t,
+                Formatting.Indented,
+                new JsonSerializerSettings
+                {
+                    DefaultValueHandling = DefaultValueHandling.Ignore
+                });
         }
 
         public static T Deserialize<T>(string jsonString)

@@ -18,8 +18,7 @@ namespace RegistrationSeleniumTests
 
             var json = System.IO.File.ReadAllText("Scenarios\\AbnBnGstCo.json");
             var scenario = SerializationHelper.Deserialize<Scenario>(json);
-            json = SerializationHelper.Serialize(scenario);
-            
+            //json = SerializationHelper.Serialize(scenario);            
 
             using (var executor = new ScenarioExecutor(scenario, DriverType.Chrome))
             {

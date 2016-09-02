@@ -11,7 +11,7 @@ namespace RegistrationSeleniumTests
                 Formatting.Indented,
                 new JsonSerializerSettings
                 {
-                    DefaultValueHandling = DefaultValueHandling.Ignore
+                    DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate
                 });
         }
 

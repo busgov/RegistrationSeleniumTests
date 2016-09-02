@@ -10,7 +10,7 @@ namespace RegistrationSeleniumTests
     {
         [DataMember]
         [DefaultValue("")]
-        public string Title { get; set; } = string.Empty;
+        public string Title { get; set; }
 
         [DataMember]
         [JsonConverter(typeof(StringEnumConverter))]
@@ -34,6 +34,7 @@ namespace RegistrationSeleniumTests
 
         [DataMember]
         [DefaultValue(500)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate)]
         public int PostDelay { get; set; }
     }
 }

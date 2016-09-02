@@ -7,12 +7,6 @@
       "Value": "http:\\sobrs:8081"
     },
     {
-      "Title": "Declare electronic lodgement protocol",
-      "ActionType": "ClickAt",
-      "XPath": "//label[contains(text(), 'submitted')]",
-      "Value": "5, 6"
-    },
-    {
       "Title": "Dismissing test system message",
       "ActionType": "Click",
       "XPath": "/html/body/div[2]/button"
@@ -98,24 +92,24 @@
       "XPath": "//*[@id=\"ajax-container-for-businessname\"]/div[2]/div[3]/div/button[2]"
     },
     {
-      "Title": "Next...",
+      "Title": "Set business name value",
       "ActionType": "SetValue",
       "XPath": "//*[@id=\"BusinessNames_BusinessNameSearchText\"]",
       "Value": "Bobs building and painting"
     },
     {
-      "Title": "Next...",
+      "Title": "Check value",
       "ActionType": "Click",
       "XPath": "//*[@id=\"ajax-container-for-businessname\"]/div[3]/fieldset/div[2]/div/p/button"
     },
     {
-      "Title": "Next...",
+      "Title": "Select 3 years",
       "ActionType": "SelectByValue",
       "XPath": "//*[@id=\"BusinessNames_SearchedBusinessName_SelectedPrice\"]",
       "Value": "80"
     },
     {
-      "Title": "Next...",
+      "Title": "Add business name",
       "ActionType": "Click",
       "XPath": "//*[@id=\"ajax-container-for-businessname\"]/div[3]/fieldset/div[3]/div/div[3]/button"
     },
@@ -499,7 +493,8 @@
       "Title": "Position held",
       "ActionType": "SetValue",
       "XPath": "//*[@id=\"Declaration_RegistrationDeclarationPosition\"]",
-      "Value": "Again with the position"
+      "Value": "Again with the position",
+      "PreDelay":  2000 
     },
     {
       "Title": "Email",

@@ -193,24 +193,43 @@ namespace RegistrationSeleniumTests
 
         private IWebElement GetElement(Action action)
         {
-            IWebElement element = null;
-
-            if (!string.IsNullOrWhiteSpace(action.XPath))
+            var tries = 5;
+            while (tries-- >= 0)
             {
-                element = _driver.FindElement(By.XPath(action.XPath));
+                try
+                {
+                    IWebElement element = null;
+
+                    if (!string.IsNullOrWhiteSpace(action.XPath))
+                    {
+                        element = _driver.FindElement(By.XPath(action.XPath));
+                    }
+
+                    if (!string.IsNullOrWhiteSpace(action.Id))
+                    {
+                        element = _driver.FindElement(By.Id(action.Id));
+                    }
+
+                    if (element == null)
+                    {
+                        throw new ArgumentException("Did not find element.");
+                    }
+
+                    return element;
+                }
+                catch (Exception ex)
+                {
+                    if (tries < 0)
+                    {
+                        Console.WriteLine(ex);
+                        throw;
+                    }
+
+                    System.Threading.Thread.Sleep(500);
+                }
             }
 
-            if (!string.IsNullOrWhiteSpace(action.Id))
-            {
-                element = _driver.FindElement(By.Id(action.Id));
-            }
-
-            if (element == null)
-            {
-                throw new ArgumentException("Did not find element.");
-            }
-
-            return element;
+            return null;
         }
 
         private void MoveTo(Action action)
@@ -245,7 +264,7 @@ namespace RegistrationSeleniumTests
 
         private void ClickJs(Action action)
         {
-            var js = (IJavaScriptExecutor) _driver;
+            var js = (IJavaScriptExecutor)_driver;
             var e = GetElement(action);
             js.ExecuteScript("arguments[0].click()", e);
         }
@@ -255,8 +274,8 @@ namespace RegistrationSeleniumTests
             // Move to X, Y to avoid any <a> tags that may be in the element.
             new Actions(_driver)
                 .MoveToElement(
-                    GetElement(action), 
-                    action.ClickAtX, 
+                    GetElement(action),
+                    action.ClickAtX,
                     action.ClickAtY)
                 .Click()
                 .Perform();

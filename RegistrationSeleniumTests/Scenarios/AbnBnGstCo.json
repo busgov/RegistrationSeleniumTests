@@ -10,7 +10,7 @@
       "Id": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Dismissing test system message",
@@ -20,7 +20,7 @@
       "Id": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Selecting ABN",
@@ -30,7 +30,7 @@
       "Id": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Selecting business name",
@@ -40,7 +40,7 @@
       "Id": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Selecting GST",
@@ -50,7 +50,7 @@
       "Id": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Selecting company",
@@ -60,7 +60,7 @@
       "Id": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Moving to next section",
@@ -70,7 +70,7 @@
       "Id": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Start applying...",
@@ -90,7 +90,7 @@
       "Id": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Selecting private company",
@@ -100,7 +100,7 @@
       "Id": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Selecting proprietary limited",
@@ -110,7 +110,7 @@
       "Id": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Next...",
@@ -120,7 +120,7 @@
       "Id": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Set company name",
@@ -130,7 +130,7 @@
       "Id": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Check...",
@@ -140,7 +140,7 @@
       "Id": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Check name...",
@@ -150,7 +150,7 @@
       "Id": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Add name...",
@@ -170,7 +170,7 @@
       "Id": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Next...",
@@ -180,7 +180,7 @@
       "Value": "Bobs building and painting",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Next...",
@@ -190,7 +190,7 @@
       "Id": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Next...",
@@ -198,7 +198,7 @@
       "XPath": "//*[@id=\"BusinessNames_SearchedBusinessName_SelectedPrice\"]",
       "Value": "80",
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Next...",
@@ -208,7 +208,7 @@
       "Id": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Next...",
@@ -218,7 +218,7 @@
       "Id": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "State of registration",
@@ -229,7 +229,7 @@
       "Value": "2",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Contace details phone",
@@ -240,7 +240,7 @@
       "Value": "02 1234 5678",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": null,
@@ -251,7 +251,7 @@
       "Value": "bob@wojcik.com.au",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": null,
@@ -262,7 +262,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": null,
@@ -273,7 +273,7 @@
       "Value": "12 Nowhere St",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": null,
@@ -284,7 +284,7 @@
       "Value": "Notopia",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": null,
@@ -295,7 +295,7 @@
       "Value": "Australian Capital Territory",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": null,
@@ -306,7 +306,7 @@
       "Value": "2600",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": null,
@@ -317,7 +317,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": null,
@@ -328,7 +328,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": null,
@@ -339,7 +339,7 @@
       "Value": "",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": null,
@@ -350,7 +350,7 @@
       "Value": "Garage construction",
       "Disabled": false,
       "PreDelay": 2000,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": null,
@@ -361,7 +361,7 @@
       "Value": "",
       "Disabled": false,
       "PreDelay": 2000,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": null,
@@ -372,7 +372,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "",
@@ -383,7 +383,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Has ultimate holding company",
@@ -394,7 +394,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 300,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Associates use residential address",
@@ -405,7 +405,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "",
@@ -416,7 +416,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Agricultural property",
@@ -427,7 +427,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 1000,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "",
@@ -438,7 +438,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "",
@@ -449,7 +449,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "",
@@ -460,7 +460,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "",
@@ -471,7 +471,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "",
@@ -482,7 +482,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "",
@@ -493,7 +493,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Director",
@@ -504,7 +504,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 300,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Secretary",
@@ -515,7 +515,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 300,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Public Officer",
@@ -526,7 +526,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 300,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "",
@@ -537,7 +537,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 300,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "",
@@ -548,7 +548,7 @@
       "Value": "Bob",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "",
@@ -559,7 +559,7 @@
       "Value": "D",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "",
@@ -570,7 +570,7 @@
       "Value": "Builder",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "",
@@ -581,7 +581,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "",
@@ -592,7 +592,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Close TFN warning",
@@ -603,7 +603,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Set tax file number",
@@ -614,7 +614,7 @@
       "Value": "146789456",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Set associate birth state",
@@ -625,7 +625,7 @@
       "Value": "Australian Capital Territory",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Set place of birth",
@@ -636,7 +636,7 @@
       "Value": "Hicksville",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Set DOB",
@@ -647,7 +647,7 @@
       "Value": "1/1/1960",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Associate address line 1",
@@ -658,7 +658,7 @@
       "Value": "666 Devil Drive",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Associate suburb",
@@ -669,7 +669,7 @@
       "Value": "Angelville",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Set associate bith state",
@@ -680,7 +680,7 @@
       "Value": "Australian Capital Territory",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Associate postcode",
@@ -691,7 +691,7 @@
       "Value": "6666",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Save individual",
@@ -702,7 +702,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Next...",
@@ -713,7 +713,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Set business associate",
@@ -724,7 +724,7 @@
       "Value": "1",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Share class/type",
@@ -735,7 +735,7 @@
       "Value": "A - A",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Number of shares",
@@ -746,7 +746,7 @@
       "Value": "1",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Amount per share",
@@ -757,7 +757,7 @@
       "Value": "23",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Amount unpaid per share",
@@ -768,7 +768,7 @@
       "Value": "0",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Not held on behalf of",
@@ -779,7 +779,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Allocate shares",
@@ -790,7 +790,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Next...",
@@ -801,7 +801,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "New business in Australia",
@@ -812,7 +812,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 1000,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "First time business in Australia",
@@ -823,7 +823,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Next...",
@@ -834,7 +834,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Given name",
@@ -845,7 +845,7 @@
       "Value": "Peter",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Family name",
@@ -856,7 +856,7 @@
       "Value": "Pan",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Position",
@@ -867,7 +867,7 @@
       "Value": "I already told you!",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Contact details: email",
@@ -878,7 +878,7 @@
       "Value": "peter.pan@wojcik.com.au",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Contact details: business hours phone",
@@ -889,7 +889,7 @@
       "Value": "0262427260",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Save contact",
@@ -900,7 +900,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Next...",
@@ -911,7 +911,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 3000,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "GST Turnover",
@@ -922,7 +922,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Required by law",
@@ -933,7 +933,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Quarterly",
@@ -944,7 +944,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "No for cash basis",
@@ -955,7 +955,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "No for importing",
@@ -966,7 +966,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "No for bank account",
@@ -977,7 +977,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Next...",
@@ -988,7 +988,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Set declarer",
@@ -999,7 +999,7 @@
       "Value": "1",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Position held",
@@ -1010,7 +1010,7 @@
       "Value": "Again with the position",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Email",
@@ -1021,7 +1021,7 @@
       "Value": "bobby@wojcik.com.au",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Declare I am the applicant",
@@ -1032,7 +1032,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Declare not disqualified",
@@ -1043,7 +1043,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Declare with last 5 years",
@@ -1054,7 +1054,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Declare electronic lodgement protocol",
@@ -1065,7 +1065,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300,
+      "PostDelay": 500,
       "ClickAtX": 5,
       "ClickAtY": 5
     },
@@ -1078,7 +1078,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Declare tax registrations",
@@ -1089,7 +1089,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Submit!!!!!!",
@@ -1100,7 +1100,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Switching to payment iframe",
@@ -1116,7 +1116,7 @@
       "Value": "Robert D Builder",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300,
+      "PostDelay": 500,
       "ClickAtX": 0,
       "ClickAtY": 0
     },
@@ -1129,7 +1129,7 @@
       "Value": "1234 4569 7895 1243",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300,
+      "PostDelay": 500,
       "ClickAtX": 0,
       "ClickAtY": 0
     },
@@ -1142,7 +1142,7 @@
       "Value": "01",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300,
+      "PostDelay": 500,
       "ClickAtX": 0,
       "ClickAtY": 0
     },
@@ -1155,7 +1155,7 @@
       "Value": "2019",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300,
+      "PostDelay": 500,
       "ClickAtX": 0,
       "ClickAtY": 0
     },
@@ -1168,7 +1168,7 @@
       "Value": "987",
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300,
+      "PostDelay": 500,
       "ClickAtX": 0,
       "ClickAtY": 0
     },
@@ -1181,7 +1181,7 @@
       "Value": null,
       "Disabled": false,
       "PreDelay": 0,
-      "PostDelay": 300
+      "PostDelay": 500
     },
     {
       "Title": "Switching from iframe",

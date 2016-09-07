@@ -39,8 +39,7 @@
     {
       "Title": "Start applying...",
       "ActionType": "Click",
-      "XPath": "//*[@id=\"ajax-container-for-businessdetails\"]/div[3]/div/div/button[2]",
-      "PostDelay": 900
+      "XPath": "//*[@id=\"ajax-container-for-businessdetails\"]/div[3]/div/div/button[2]"
     },
     {
       "Title": "Skipping logon section",
@@ -82,9 +81,7 @@
     {
       "Title": "Add name...",
       "ActionType": "Click",
-      "XPath": "//*[@id=\"fieldsetCompanyNewName\"]/div/div/div/div[3]/button",
-      "PreDelay": 1000,
-      "PostDelay": 1000
+      "XPath": "//*[@id=\"fieldsetCompanyNewName\"]/div/div/div/div[3]/button"
     },
     {
       "Title": "Next...",
@@ -175,14 +172,12 @@
     {
       "ActionType": "SetValue",
       "XPath": "//*[@id=\"ContactDetails_BusinessAddressActivity_SearchTerm\"]",
-      "Value": "Garage construction",
-      "PreDelay": 2000
+      "Value": "Garage construction"
     },
     {
       "ActionType": "Click",
       "XPath": "//div[@id=\"businessActivitySuggestions1\"]/ul/li/span[2]",
-      "Value": "",
-      "PreDelay": 2000
+      "Value": ""
     },
     {
       "ActionType": "Click",
@@ -195,8 +190,7 @@
     {
       "Title": "Has ultimate holding company",
       "ActionType": "Click",
-      "XPath": "//*[@id=\"Structure_IsUnderHoldingCompany\"]/label[2]",
-      "PreDelay": 300
+      "XPath": "//*[@id=\"Structure_IsUnderHoldingCompany\"]/label[2]"
     },
     {
       "Title": "Associates use residential address",
@@ -210,8 +204,7 @@
     {
       "Title": "Agricultural property",
       "ActionType": "Click",
-      "XPath": "//*[@id='BusinessActivityDetails_OperateAnAgriculturalPropertyYesNo']/div/label[2]",
-      "PreDelay": 1000
+      "XPath": "//*[@id='BusinessActivityDetails_OperateAnAgriculturalPropertyYesNo']/div/label[2]"
     },
     {
       "ActionType": "Click",
@@ -241,25 +234,21 @@
     {
       "Title": "Director",
       "ActionType": "Click",
-      "XPath": "//*[@id=\"Associates_PersonAssociate_Roles\"]/div/div[2]/div[2]/p/label",
-      "PreDelay": 300
+      "XPath": "//*[@id=\"Associates_PersonAssociate_Roles\"]/div/div[2]/div[2]/p/label"
     },
     {
       "Title": "Secretary",
       "ActionType": "Click",
-      "XPath": "//*[@id=\"Associates_PersonAssociate_Roles\"]/div/div[2]/div[4]/p/label",
-      "PreDelay": 300
+      "XPath": "//*[@id=\"Associates_PersonAssociate_Roles\"]/div/div[2]/div[4]/p/label"
     },
     {
       "Title": "Public Officer",
       "ActionType": "Click",
-      "XPath": "//*[@id=\"Associates_PersonAssociate_Roles\"]/div/div[2]/div[6]/p/label",
-      "PreDelay": 300
+      "XPath": "//*[@id=\"Associates_PersonAssociate_Roles\"]/div/div[2]/div[6]/p/label"
     },
     {
       "ActionType": "Click",
-      "XPath": "//*[@id=\"Associates_PersonAssociate_Roles\"]/div/div[2]/div[8]/p/label",
-      "PreDelay": 300
+      "XPath": "//*[@id=\"Associates_PersonAssociate_Roles\"]/div/div[2]/div[8]/p/label"
     },
     {
       "ActionType": "SetValue",
@@ -395,8 +384,7 @@
     {
       "Title": "New business in Australia",
       "ActionType": "Click",
-      "XPath": "//*[@id=\"ApplicationReasonDetails_ReasonForApplication\"]/div[1]/div/p/label",
-      "PreDelay": 1000
+      "XPath": "//*[@id=\"ApplicationReasonDetails_ReasonForApplication\"]/div[1]/div/p/label"
     },
     {
       "Title": "First time business in Australia",
@@ -446,8 +434,7 @@
     {
       "Title": "Next...",
       "ActionType": "Click",
-      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[9]/div/div[3]/div/button[2]",
-      "PreDelay": 3000
+      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[9]/div/div[3]/div/button[2]"
     },
     {
       "Title": "GST Turnover",
@@ -494,8 +481,7 @@
       "Title": "Position held",
       "ActionType": "SetValue",
       "XPath": "//*[@id=\"Declaration_RegistrationDeclarationPosition\"]",
-      "Value": "Again with the position",
-      "PreDelay":  2000 
+      "Value": "Again with the position"
     },
     {
       "Title": "Email",
@@ -542,8 +528,7 @@
     {
       "Title": "Switching to payment iframe",
       "ActionType": "SwitchToFrame",
-      "XPath": "//*[@id=\"pay-frame\"]",
-      "PostDelay": 0
+      "XPath": "//*[@id=\"pay-frame\"]"
     },
     {
       "Title": "Cardholder name",

@@ -16,7 +16,9 @@ namespace RegistrationSeleniumTests
                 return;
             }
 
-            var json = System.IO.File.ReadAllText("Scenarios\\AbnBnGstCo.json");
+            const string scenarioName = "Scenarios\\AbnBnGstCo{0}.json";
+
+            var json = System.IO.File.ReadAllText(string.Format(scenarioName, ""));
             var scenario = SerializationHelper.Deserialize<Scenario>(json);
             //json = SerializationHelper.Serialize(scenario);            
 
@@ -36,6 +38,9 @@ namespace RegistrationSeleniumTests
                 Console.WriteLine("Press enter to continue...");
                 Console.ReadLine();
             }
+
+            // Save scenario in case XPaths were updated.
+            System.IO.File.WriteAllText(string.Format(scenarioName, ".updated"), SerializationHelper.Serialize(scenario));
         }
 
         private static void CreateJson()

@@ -89,37 +89,37 @@ namespace RegistrationSeleniumTests
 
                         case ActionType.Click:
                             Console.WriteLine($"Clicking '{action.XPath}'.");
-                            Click(action);
+                            if (!Click(action)) { return false; }
                             break;
 
                         case ActionType.ClickJs:
                             Console.WriteLine($"Clicking '{action.XPath}'.");
-                            ClickJs(action);
+                            if (!ClickJs(action)) { return false; }
                             break;
 
                         case ActionType.ClickAt:
                             Console.WriteLine($"Clicking at '{action.XPath}'.");
-                            ClickAt(action);
+                            if (!ClickAt(action)) { return false; }
                             break;
 
                         case ActionType.SetValue:
                             Console.WriteLine($"Setting value '{action.Value}' for '{action.XPath}'.");
-                            SetValue(action);
+                            if (!SetValue(action)) { return false; }
                             break;
 
                         case ActionType.SelectByValue:
                             Console.WriteLine($"Selecting value '{action.Value}' for '{action.XPath}'.");
-                            SelectByValue(action);
+                            if (!SelectByValue(action)) { return false; }
                             break;
 
                         case ActionType.SelectByText:
                             Console.WriteLine($"Selecting text '{action.Value}' for '{action.XPath}'.");
-                            SelectByText(action);
+                            if (!SelectByText(action)) { return false; }
                             break;
 
                         case ActionType.SelectByIndex:
                             Console.WriteLine($"Selecting index '{action.Value}' for '{action.XPath}'.");
-                            SelectByIndex(action);
+                            if (!SelectByIndex(action)) { return false; }
                             break;
 
                         case ActionType.NavigateToUrl:
@@ -133,18 +133,18 @@ namespace RegistrationSeleniumTests
                             break;
 
                         case ActionType.MoveTo:
-                            MoveTo(action);
+                            if (!MoveTo(action)) { return false; }
                             break;
 
                         case ActionType.Stop:
                             return false;
 
                         case ActionType.SwitchToFrame:
-                            SwitchToFrame(action);
+                            if (!SwitchToFrame(action)) { return false; }
                             break;
 
                         case ActionType.SwitchToDefault:
-                            SwitchToDefault(action);
+                            SwitchToDefault();
                             break;
 
                         default:
@@ -194,78 +194,123 @@ namespace RegistrationSeleniumTests
 
         private IWebElement GetElement(Action action)
         {
+            if (string.IsNullOrWhiteSpace(action.XPath))
+            {
+                throw new InvalidOperationException("Action XPath not set to a value.");
+            }
+
             var tries = 5;
-            while (tries-- >= 0)
+            while (true)
             {
                 try
                 {
-                    IWebElement element = null;
+                    var element = _driver.FindElement(By.XPath(action.XPath));
 
-                    if (!string.IsNullOrWhiteSpace(action.XPath))
+                    // Visible and enabled?
+                    if (element.Displayed && element.Enabled)
                     {
-                        element = _driver.FindElement(By.XPath(action.XPath));
+                        return element;
                     }
 
-                    if (element == null)
-                    {
-                        throw new ArgumentException("Did not find element.");
-                    }
-
-                    return element;
+                    throw new Exception("Element not visible or not enabled.");
                 }
-                catch (Exception ex)
+                catch (NoSuchElementException nsex)
                 {
-                    if (tries < 0)
+                    Console.WriteLine($"Failed to get element, tries remaining {tries}.");
+                    if (tries-- <= 0)
                     {
-                        Console.WriteLine(ex);
-                        throw;
-                    }
+                        Console.WriteLine("Enter a different XPath to try again, or enter to continue.");
+                        var xpath = Console.ReadLine();
 
-                    System.Threading.Thread.Sleep(500);
+                        if (string.IsNullOrWhiteSpace(xpath))
+                        {
+                            Console.WriteLine($"Element not found: {nsex.Message}");
+                            return null;
+                        }
+
+                        var title = "[updated: XPath]";
+                        if (!string.IsNullOrWhiteSpace(action.Title))
+                        {
+                            title = $"{action.Title} {title}";
+                        }
+
+                        action.Title = title;
+                        action.XPath = xpath;
+                        tries = 5;
+                        continue;
+                    }
+                    System.Threading.Thread.Sleep(1000);
                 }
             }
-
-            return null;
         }
 
-        private void MoveTo(Action action)
+        private bool MoveTo(Action action)
         {
-            new Actions(_driver).MoveToElement(GetElement(action)).Perform();
+            var element = GetElement(action);
+            if (element == null) { return false; }
+
+            new Actions(_driver).MoveToElement(element).Perform();
+            return true;
         }
 
-        private void SelectByValue(Action action)
+        private bool SelectByValue(Action action)
         {
-            new SelectElement(GetElement(action)).SelectByValue(action.Value);
+            var element = GetElement(action);
+            if (element == null) { return false; }
+
+            new SelectElement(element).SelectByValue(action.Value);
+            return true;
         }
 
-        private void SelectByIndex(Action action)
+        private bool SelectByIndex(Action action)
         {
-            new SelectElement(GetElement(action)).SelectByIndex(int.Parse(action.Value));
+            var element = GetElement(action);
+            if (element == null) { return false; }
+
+            new SelectElement(element).SelectByIndex(int.Parse(action.Value));
+            return true;
         }
 
-        private void SelectByText(Action action)
+        private bool SelectByText(Action action)
         {
-            new SelectElement(GetElement(action)).SelectByText(action.Value);
+            var element = GetElement(action);
+            if (element == null) { return false; }
+
+            new SelectElement(element).SelectByText(action.Value);
+            return true;
         }
 
-        private void SetValue(Action action)
+        private bool SetValue(Action action)
         {
-            GetElement(action).SendKeys(action.Value);
+            var element = GetElement(action);
+            if (element == null) { return false; }
+
+            element.SendKeys(action.Value);
+
+            return true;
         }
 
-        private void Click(Action action)
+        private bool Click(Action action)
         {
-            GetElement(action).Click();
+            var element = GetElement(action);
+            if (element == null) { return false; }
+
+            element.Click();
+            return true;
         }
 
-        private void ClickJs(Action action)
+        private bool ClickJs(Action action)
         {
+            var element = GetElement(action);
+            if (element == null) { return false; }
+
             var js = (IJavaScriptExecutor)_driver;
-            var e = GetElement(action);
-            js.ExecuteScript("arguments[0].click()", e);
+            js.ExecuteScript("arguments[0].click()", element);
+
+            return true;
         }
 
-        private void ClickAt(Action action)
+        private bool ClickAt(Action action)
         {
             var x = 0;
             var y = 0;
@@ -287,22 +332,31 @@ namespace RegistrationSeleniumTests
                     "There must be two integer values in the for 'x, y' defining the click at action.");
             }
 
+            var element = GetElement(action);
+            if (element == null) { return false; }
+
             // Move to X, Y to avoid any <a> tags that may be in the element.
             new Actions(_driver)
                 .MoveToElement(
-                    GetElement(action),
+                    element,
                     x,
                     y)
                 .Click()
                 .Perform();
+
+            return true;
         }
 
-        private void SwitchToFrame(Action action)
+        private bool SwitchToFrame(Action action)
         {
-            _driver.SwitchTo().Frame(GetElement(action));
+            var element = GetElement(action);
+            if (element == null) { return false; }
+
+            _driver.SwitchTo().Frame(element);
+            return true;
         }
 
-        private void SwitchToDefault(Action action)
+        private void SwitchToDefault()
         {
             _driver.SwitchTo().DefaultContent();
         }

@@ -33,7 +33,7 @@ namespace RegistrationSeleniumTests
         public int PreDelay { get; set; }
 
         [DataMember]
-        [DefaultValue(500)]
+        [DefaultValue(800)]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate)]
         public int PostDelay { get; set; }
     }

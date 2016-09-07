@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Linq;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -312,8 +311,8 @@ namespace RegistrationSeleniumTests
 
         private bool ClickAt(Action action)
         {
-            var x = 0;
-            var y = 0;
+            int x;
+            int y;
 
             try
             {

@@ -9,9 +9,8 @@ namespace RegistrationSeleniumTests
     internal class Action
     {
         [DataMember]
-        [DefaultValue("[Title not set]")]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate)]
-        public string Title { get; set; }
+        [DefaultValue("")]
+        public string Title { get; set; } = "";
 
         [DataMember]
         [JsonConverter(typeof(StringEnumConverter))]

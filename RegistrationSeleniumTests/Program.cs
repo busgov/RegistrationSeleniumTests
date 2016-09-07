@@ -20,6 +20,14 @@ namespace RegistrationSeleniumTests
             var scenario = SerializationHelper.Deserialize<Scenario>(json);
             //json = SerializationHelper.Serialize(scenario);            
 
+            //for (var i = 0; i < 1000; i++)
+            //{
+            //    using (var executor = new ScenarioExecutor(scenario, DriverType.Chrome))
+            //    {
+            //        executor.Run(true, true);
+            //    }
+            //}
+
             using (var executor = new ScenarioExecutor(scenario, DriverType.Chrome))
             {
                 executor.Run(true, true);

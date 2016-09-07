@@ -128,62 +128,75 @@
       "Value": "02 1234 5678"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "SetValue",
       "XPath": "//*[@id=\"ContactDetails_Email\"]",
       "Value": "bob@wojcik.com.au"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "Click",
       "XPath": "//*[@id=\"ContactDetails_RegisteredAddress\"]/div[3]/fieldset[2]/p/input"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "SetValue",
       "XPath": "//*[@id=\"ContactDetails_RegisteredAddress_AddressLine1\"]",
       "Value": "12 Nowhere St"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "SetValue",
       "XPath": "//*[@id=\"ContactDetails_RegisteredAddress_Suburb\"]",
       "Value": "Notopia"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "SelectByText",
       "XPath": "//*[@id=\"ContactDetails_RegisteredAddress_State\"]",
       "Value": "Australian Capital Territory"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "SetValue",
       "XPath": "//*[@id=\"ContactDetails_RegisteredAddress_Postcode\"]",
       "Value": "2600"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "Click",
       "XPath": "//*[@id=\"ContactDetails_IsCompanyOccupyPremises\"]/div[2]/div/label[1]/span"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "Click",
       "XPath": "//*[@id=\"ContactDetails_IsPrincipalPlaceOfBusiness\"]/div/div[2]/div/label[1]/span"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "MoveTo",
       "XPath": "//*[@id=\"ContactDetails_BusinessAddressActivity_SearchTerm\"]",
       "Value": ""
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "SetValue",
       "XPath": "//*[@id=\"ContactDetails_BusinessAddressActivity_SearchTerm\"]",
       "Value": "Garage construction"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "Click",
       "XPath": "//div[@id=\"businessActivitySuggestions1\"]/ul/li/span[2]",
       "Value": ""
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "Click",
       "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[2]/div[2]/div/div/button[2]"
     },
     {
+      "Title": "",
       "ActionType": "Click",
       "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[3]/div[2]/div[2]/div/button[2]"
     },
@@ -198,6 +211,7 @@
       "XPath": "//*[@id=\"Structure_IsOfficeholdersAddressResidential\"]/label[1]"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "Click",
       "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[4]/div[2]/div/div/button[2]"
     },
@@ -207,29 +221,34 @@
       "XPath": "//*[@id='BusinessActivityDetails_OperateAnAgriculturalPropertyYesNo']/div/label[2]"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "Click",
       "XPath": "//*[@id=\"BusinessActivityDetails_IsResidentOfAustralia\"]/div/label[1]/span"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "Click",
       "XPath": "//*[@id=\"BusinessActivityDetails_IsIncomeTaxExempt\"]/div/label[2]/span"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "Click",
       "XPath": "//*[@id=\"BusinessActivityDetails_IsNonProfitOrganisation\"]/div/label[2]/span"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "Click",
       "XPath": "//*[@id=\"BusinessActivityDetails_IsGovernmentOwnedOrControlled\"]/div/label[2]/span"
     },
     {
+      "Title": "[updated: XPath]",
       "ActionType": "Click",
-      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[5]/div/div[2]/div/button[2]"
+      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[5]/div/div[3]/div/button[2]"
     },
     {
-      "Title":  "Add individual", 
+      "Title": "Add individual",
       "ActionType": "Click",
-      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[6]/div[2]/div[2]/button[1]"
+      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[6]/div[2]/div[3]/button[1]"
     },
     {
       "Title": "Director",
@@ -247,29 +266,35 @@
       "XPath": "//*[@id=\"Associates_PersonAssociate_Roles\"]/div/div[2]/div[6]/p/label"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "Click",
       "XPath": "//*[@id=\"Associates_PersonAssociate_Roles\"]/div/div[2]/div[8]/p/label"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "SetValue",
       "XPath": "//*[@id=\"Associates_PersonAssociate_GivenName\"]",
       "Value": "Bob"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "SetValue",
       "XPath": "//*[@id=\"Associates_PersonAssociate_OtherName\"]",
       "Value": "D"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "SetValue",
       "XPath": "//*[@id=\"Associates_PersonAssociate_FamilyName\"]",
       "Value": "Builder"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "Click",
       "XPath": "//*[@id=\"Associates_PersonAssociate_ResidentialAddress\"]/div[3]/fieldset[2]/p/input"
     },
     {
+      "Title": "[Title not set]",
       "ActionType": "Click",
       "XPath": "//*[@id=\"save-person\"]"
     },
@@ -334,7 +359,7 @@
     {
       "Title": "Next...",
       "ActionType": "Click",
-      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[6]/div[2]/div[3]/div/button[2]"
+      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[6]/div[2]/div[4]/div/button[2]"
     },
     {
       "Title": "Set business associate",
@@ -434,7 +459,7 @@
     {
       "Title": "Next...",
       "ActionType": "Click",
-      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[9]/div/div[3]/div/button[2]"
+      "XPath": "//*[@id=\"ajax-container-for-companydetails\"]/div[9]/div/div[4]/div/button[2]"
     },
     {
       "Title": "GST Turnover",

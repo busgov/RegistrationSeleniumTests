@@ -9,27 +9,33 @@ namespace RegistrationSeleniumTests
     internal class Action
     {
         [DataMember]
-        [DefaultValue("")]
+        [DefaultValue("[Title not set]")]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate)]
         public string Title { get; set; }
 
         [DataMember]
         [JsonConverter(typeof(StringEnumConverter))]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate)]
         public ActionType ActionType { get; set; } = ActionType.None;
 
         [DataMember]
         [DefaultValue(null)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate)]
         public string XPath { get; set; }
 
         [DataMember]
         [DefaultValue(null)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate)]
         public string Value { get; set; }
 
         [DataMember]
         [DefaultValue(false)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate)]
         public bool Disabled { get; set; }
 
         [DataMember]
         [DefaultValue(0)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate)]
         public int PreDelay { get; set; }
 
         [DataMember]

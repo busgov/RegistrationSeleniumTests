@@ -87,37 +87,37 @@ namespace RegistrationSeleniumTests
                             break;
 
                         case ActionType.Click:
-                            Console.WriteLine($"Clicking '{action.XPath}'.");
+                            Console.WriteLine($"Clicking '{action.ByValue}'.");
                             if (!Click(action)) { return false; }
                             break;
 
                         case ActionType.ClickJs:
-                            Console.WriteLine($"Clicking '{action.XPath}'.");
+                            Console.WriteLine($"Clicking '{action.ByValue}'.");
                             if (!ClickJs(action)) { return false; }
                             break;
 
                         case ActionType.ClickAt:
-                            Console.WriteLine($"Clicking at '{action.XPath}'.");
+                            Console.WriteLine($"Clicking at '{action.ByValue}'.");
                             if (!ClickAt(action)) { return false; }
                             break;
 
                         case ActionType.SetValue:
-                            Console.WriteLine($"Setting value '{action.Value}' for '{action.XPath}'.");
+                            Console.WriteLine($"Setting value '{action.Value}' for '{action.ByValue}'.");
                             if (!SetValue(action)) { return false; }
                             break;
 
                         case ActionType.SelectByValue:
-                            Console.WriteLine($"Selecting value '{action.Value}' for '{action.XPath}'.");
+                            Console.WriteLine($"Selecting value '{action.Value}' for '{action.ByValue}'.");
                             if (!SelectByValue(action)) { return false; }
                             break;
 
                         case ActionType.SelectByText:
-                            Console.WriteLine($"Selecting text '{action.Value}' for '{action.XPath}'.");
+                            Console.WriteLine($"Selecting text '{action.Value}' for '{action.ByValue}'.");
                             if (!SelectByText(action)) { return false; }
                             break;
 
                         case ActionType.SelectByIndex:
-                            Console.WriteLine($"Selecting index '{action.Value}' for '{action.XPath}'.");
+                            Console.WriteLine($"Selecting index '{action.Value}' for '{action.ByValue}'.");
                             if (!SelectByIndex(action)) { return false; }
                             break;
 
@@ -193,9 +193,9 @@ namespace RegistrationSeleniumTests
 
         private IWebElement GetElement(Action action)
         {
-            if (string.IsNullOrWhiteSpace(action.XPath))
+            if (string.IsNullOrWhiteSpace(action.ByValue))
             {
-                throw new InvalidOperationException("Action XPath not set to a value.");
+                throw new InvalidOperationException($"Action {nameof(action.ByValue)} not set to a value.");
             }
 
             var tries = 5;
@@ -203,7 +203,45 @@ namespace RegistrationSeleniumTests
             {
                 try
                 {
-                    var element = _driver.FindElement(By.XPath(action.XPath));
+                    By by;
+                    switch (action.ByType)
+                    {
+                        case ByType.XPath:
+                            by = By.XPath(action.ByValue);
+                            break;
+
+                        case ByType.Id:
+                            by = By.Id(action.ByValue);
+                            break;
+
+                        case ByType.ClassName:
+                            by = By.ClassName(action.ByValue);
+                            break;
+
+                        case ByType.CssSelector:
+                            by = By.CssSelector(action.ByValue);
+                            break;
+
+                        case ByType.Name:
+                            by = By.Name(action.ByValue);
+                            break;
+
+                        case ByType.TagName:
+                            by = By.TagName(action.ByValue);
+                            break;
+
+                        case ByType.LinkText:
+                            by = By.LinkText(action.ByValue);
+                            break;
+
+                        case ByType.PartialLinkText:
+                            by = By.PartialLinkText(action.ByValue);
+                            break;
+                        default:
+                            throw new ArgumentOutOfRangeException(nameof(action.ByType));
+                    }
+
+                    var element = _driver.FindElement(by);
 
                     // Visible and enabled?
                     if (element.Displayed && element.Enabled)
@@ -218,23 +256,83 @@ namespace RegistrationSeleniumTests
                     Console.WriteLine($"Failed to get element, tries remaining {tries}.");
                     if (tries-- <= 0)
                     {
-                        Console.WriteLine("Enter a different XPath to try again, or enter to continue.");
-                        var xpath = Console.ReadLine();
+                        Console.WriteLine("Try again");
+                        Console.WriteLine("  x   - By xpath");
+                        Console.WriteLine("  i   - By id");
+                        Console.WriteLine("  cn  - By class name");
+                        Console.WriteLine("  css - By css selector");
+                        Console.WriteLine("  n   - By name");
+                        Console.WriteLine("  tn  - By tag name");
+                        Console.WriteLine("  lt  - By link text");
+                        Console.WriteLine("  plt - By name");
+                        Console.WriteLine("  Any other key - Cancel...");
+                        var tryAgain = (Console.ReadLine() ?? string.Empty).ToLower().Trim();
 
-                        if (string.IsNullOrWhiteSpace(xpath))
+                        ByType byType;
+
+                        switch (tryAgain)
+                        {
+                            case "x":
+                                byType = ByType.XPath;
+                                Console.WriteLine("Enter XPath:");
+                                break;
+
+                            case "i":
+                                byType = ByType.Id;
+                                Console.WriteLine("Enter Id:");
+                                break;
+
+                            case "cn":
+                                byType = ByType.ClassName;
+                                Console.WriteLine("Enter Class Name:");
+                                break;
+
+                            case "css":
+                                byType = ByType.CssSelector;
+                                Console.WriteLine("Enter CSS Selector:");
+                                break;
+
+                            case "n":
+                                byType = ByType.Name;
+                                Console.WriteLine("Enter Name:");
+                                break;
+
+                            case "tn":
+                                byType = ByType.TagName;
+                                Console.WriteLine("Enter Tag Name:");
+                                break;
+
+                            case "lt":
+                                byType = ByType.LinkText;
+                                Console.WriteLine("Enter Link Text:");
+                                break;
+
+                            case "plt":
+                                byType = ByType.PartialLinkText;
+                                Console.WriteLine("Enter Partial Link Text:");
+                                break;
+
+                            default:
+                                return null;
+                        }
+
+                        var byValue = Console.ReadLine();
+
+                        if (string.IsNullOrWhiteSpace(byValue))
                         {
                             Console.WriteLine($"Element not found: {nsex.Message}");
                             return null;
                         }
 
-                        var title = "[updated: XPath]";
+                        var title = $"[updated: {byType}]";
                         if (!string.IsNullOrWhiteSpace(action.Title))
                         {
                             title = $"{action.Title} {title}";
                         }
 
                         action.Title = title;
-                        action.XPath = xpath;
+                        action.ByType = byType;
+                        action.ByValue = byValue;
                         tries = 5;
                         continue;
                     }

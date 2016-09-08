@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ByType.cs" />
     <Compile Include="CsvToScenarioParser.cs" />
     <Compile Include="DriverType.cs" />
     <Compile Include="Program.cs" />

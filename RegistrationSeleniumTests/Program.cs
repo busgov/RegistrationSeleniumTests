@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 
 namespace RegistrationSeleniumTests
 {
@@ -19,7 +18,7 @@ namespace RegistrationSeleniumTests
             const string scenarioName = "Scenarios\\AbnBnGstCo{0}.json";
 
             var json = System.IO.File.ReadAllText(string.Format(scenarioName, ""));
-            var scenario = SerializationHelper.Deserialize<Scenario>(json);
+            var scenario = SerializationHelper.Deserialize<Scenario>(json);            
             //json = SerializationHelper.Serialize(scenario);            
 
             //for (var i = 0; i < 1000; i++)
@@ -39,7 +38,7 @@ namespace RegistrationSeleniumTests
                 Console.ReadLine();
             }
 
-            // Save scenario in case XPaths were updated.
+            // Save scenario in case By values were updated.
             System.IO.File.WriteAllText(string.Format(scenarioName, ".updated"), SerializationHelper.Serialize(scenario));
         }
 

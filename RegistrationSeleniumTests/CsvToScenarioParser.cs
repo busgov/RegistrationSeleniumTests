@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace RegistrationSeleniumTests
 {
@@ -51,11 +50,13 @@ namespace RegistrationSeleniumTests
                 case ActionType.ClickJs:
                 case ActionType.MoveTo:
                 case ActionType.SwitchToFrame:
-                    action.XPath = actionParameters[2];
+                    action.ByType = ByType.XPath;
+                    action.ByValue = actionParameters[2];
                     break;
 
                 case ActionType.ClickAt:
-                    action.XPath = actionParameters[2];
+                    action.ByType = ByType.XPath;
+                    action.ByValue = actionParameters[2];
                     action.Value = actionParameters[3];
                     break;
 
@@ -63,7 +64,8 @@ namespace RegistrationSeleniumTests
                 case ActionType.SelectByIndex:
                 case ActionType.SelectByText:
                 case ActionType.SelectByValue:
-                    action.XPath = actionParameters[2];
+                    action.ByType = ByType.XPath;
+                    action.ByValue = actionParameters[2];
                     action.Value = actionParameters[3];
                     break;
 

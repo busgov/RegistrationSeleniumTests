@@ -2,6 +2,7 @@
 using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using OpenQA.Selenium;
 
 namespace RegistrationSeleniumTests
 {
@@ -20,11 +21,6 @@ namespace RegistrationSeleniumTests
         [DataMember]
         [DefaultValue(null)]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate)]
-        public string XPath { get; set; }
-
-        [DataMember]
-        [DefaultValue(null)]
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate)]
         public string Value { get; set; }
 
         [DataMember]
@@ -33,12 +29,20 @@ namespace RegistrationSeleniumTests
         public bool Disabled { get; set; }
 
         [DataMember]
+        [DefaultValue(ByType.XPath)]
+        public ByType ByType { get; set; } = ByType.XPath;
+
+        [DataMember]
+        [DefaultValue("")]
+        public string ByValue { get; set; } = "";
+
+        [DataMember]
         [DefaultValue(0)]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate)]
         public int PreDelay { get; set; }
 
         [DataMember]
-        [DefaultValue(800)]
+        [DefaultValue(500)]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate)]
         public int PostDelay { get; set; }
     }

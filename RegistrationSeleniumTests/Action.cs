@@ -29,6 +29,7 @@ namespace RegistrationSeleniumTests
         public bool Disabled { get; set; }
 
         [DataMember]
+        [JsonConverter(typeof(StringEnumConverter))]
         [DefaultValue(ByType.XPath)]
         public ByType ByType { get; set; } = ByType.XPath;
 
